@@ -1,17 +1,63 @@
-import React from 'react';
+import React from "react";
+import { useRef, useEffect, useState } from "react";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Navbar = () => {
+    const linkItems = ["HOME", "ABOUT", "KEYBOARD KITS", "SWITCHES"];
+    const [isClicked, setIsClicked] = useState(false);
+    const isDestop = useMediaQuery("(min-width: 768px)");
+    const toggleClasses = () => {
+        setIsClicked(!isClicked);
+    };
+
     return (
-        <nav className='flex justify-around align-center min-h-[8vh] bg-[#f8fafc]'>
-            <div className='tracking-widest'>
-                <h4 className=''>CustomKBs</h4>
+        <nav className="flex justify-around items-center min-h-[8vh] bg-[#121212] pr-80">
+            <div className="tracking-[3px] text-xl">
+                <h4 className="text-[#f8fafc]">CUSTOMKBS</h4>
             </div>
-            <ul>
-                <li><a href='#'>HOME</a></li>
-                <li><a href='#'>ABOUT</a></li>
-                <li><a href='#'>KEYBOARD KITS</a></li>
-                <li><a href='#'>SWITCHES</a></li>
+            <ul
+                className={
+                    isClicked || isDestop ? "translate-x-0" : "translate-x-full"
+                }
+            >
+                {linkItems.map((linkItem, index) => (
+                    <li key={index}>
+                        <a
+                            className={
+                                isClicked ? "navLinksFadeIn" : "navLinksFadeOut"
+                            }
+                        >
+                            {linkItem}
+                        </a>
+                    </li>
+                ))}
             </ul>
+            <div
+                className="block md:invisible cursor-pointer"
+                onClick={toggleClasses}
+            >
+                <div
+                    className={
+                        isClicked
+                            ? "transitionAllEase rotate-45 translate-y-[1px] translate-x-[-5px] w-6 h-0.5 bg-[#f8fafc] m-1"
+                            : "transitionAllEase md:hidden w-6 h-0.5 bg-[#f8fafc] m-1"
+                    }
+                ></div>
+                <div
+                    className={
+                        isClicked
+                            ? "transitionAllEase opacity-0"
+                            : "transitionAllEase md:hidden w-6 h-0.5 bg-[#f8fafc] m-1"
+                    }
+                ></div>
+                <div
+                    className={
+                        isClicked
+                            ? "transitionAllEase rotate-[-45deg] translate-y-[-6px] translate-x-[-5px] w-6 h-0.5 bg-[#f8fafc] m-1"
+                            : "transitionAllEase md:hidden w-6 h-0.5 bg-[#f8fafc] m-1"
+                    }
+                ></div>
+            </div>
         </nav>
     );
 };

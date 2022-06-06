@@ -2,13 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  /*background: black;*/
-  padding: 0;
-  margin: 0;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-  sans-serif;
-  line-height: 1.1;
-  letter-spacing: 0;
+    background: black;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+    line-height: 1.1;
+    letter-spacing: 0;
+    @apply overflow-x-hidden sm:overflow-x-visible;
+}
+
+nav ul {
+    @apply absolute right-0 h-[92vh] w-[50%] top-[108vh] bg-[#121212] flex flex-col items-center
+    transition-transform ease-in duration-500 justify-around
+    md:flex md:top-[100vh] md:h-[8vh] md:flex-row;
+}
+
+nav ul li a {
+    @apply text-[#f8fafc] cursor-pointer;
+}
+
+.transitionAllEase {
+    transition: all 0.3s ease;
+}
+
+.navLinksFadeIn {
+    transition: all 1s;
+    animation: navLinksFadeIn 1s ease;
+}
+
+.navLinksFadeOut {
+    transition: all 1s;
+    animation: navLinksFadeOut 1s ease;
+}
+
+@keyframes navLinksFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinksFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
 }
