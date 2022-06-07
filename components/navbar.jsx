@@ -17,7 +17,9 @@ const Navbar = () => {
             </div>
             <ul
                 className={
-                    isClicked || isDestop ? "translate-x-0" : "translate-x-full"
+                    isClicked || isDestop
+                        ? "translate-x-0 z-20"
+                        : "translate-x-full z-20"
                 }
             >
                 {linkItems.map((linkItem, index) => (

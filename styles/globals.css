@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: black;
+    background: #121212;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
         sans-serif;
     line-height: 1.1;
@@ -74,4 +74,8 @@ nav ul li a:hover::after {
         opacity: 0;
         transform: translateY(50px);
     }
+}
+
+.grid-rows-16 {
+    grid-template-rows: repeat(16, auto);
 }
