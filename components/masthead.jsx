@@ -1,7 +1,8 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useEffect, useState } from "react";
 import { ScrollContext } from "../utils/scroll-observer";
 
 const Masthead = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
     const refContainer = useRef(null);
     const { scrollY } = useContext(ScrollContext);
 
@@ -11,7 +12,9 @@ const Masthead = () => {
     if (elContainer) {
         progress = Math.min(1, scrollY / elContainer.clientHeight);
     }
-    console.log(progress);
+    const handleImageLoaded = useEffect(() => {
+        setImageLoaded(true);
+    }, []);
     return (
         <div
             ref={refContainer}
@@ -38,13 +41,20 @@ const Masthead = () => {
                     <span>Keyboard building, </span> <span>done right.</span>
                 </h2>
             </div>
-            <div className="flex-grow-0 pb-20 md:pb-10 transition-all duration-1000 z-10">
+            <div
+                onLoad={handleImageLoaded}
+                className={`flex-grow-0 pb-20 md:pb-10 z-10`}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="32"
                     fill="#ffffff"
-                    className="bi bi-chevron-down"
+                    className={`bi bi-chevron-down transition-all duration-1000 ${
+                        imageLoaded
+                            ? "opacity-100"
+                            : "opacity-0 -translate-y-10"
+                    }`}
                     viewBox="0 0 16 16"
                 >
                     <path

@@ -5,7 +5,7 @@ import Shop from "../components/shop";
 
 export default function Home() {
     return (
-        <div>
+        <div className="min-h-screen sticky top-0 -z-10">
             <Head>
                 <title>CustomKbs | Shop</title>
                 <meta
