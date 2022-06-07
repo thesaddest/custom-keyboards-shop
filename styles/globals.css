@@ -18,7 +18,26 @@ nav ul {
 }
 
 nav ul li a {
-    @apply text-[#f8fafc] cursor-pointer;
+    @apply text-[#f8fafc] cursor-pointer relative;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f8fafc;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms ease-in;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .transitionAllEase {
