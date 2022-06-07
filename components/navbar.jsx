@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex justify-around items-center h-[8vh] bg-[#121212] md:pr-80">
+        <nav className="flex justify-around items-center h-[8vh] z-20 bg-[#121212] md:pr-80">
             <div className="tracking-[3px] text-xl">
                 <h4 className="text-[#f8fafc]">CUSTOMKBS</h4>
             </div>
