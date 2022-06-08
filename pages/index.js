@@ -4,6 +4,39 @@ import Navbar from "../components/navbar";
 import Shop from "../components/shop";
 
 export default function Home() {
+    const data = [
+        {
+            title: "FL 680",
+            description: "Small layout, easy to carry and no worries",
+            price: "$115.99",
+            url: "https://a.aliexpress.com/_mOO1oRg",
+            img: "https://img.joomcdn.net/c6c178e175db9446805739fa9418593f7c533f7f_original.jpeg",
+        },
+        {
+            title: "FL Q75",
+            description:
+                "High-gloss mirror shell, the appearance is futher improved",
+            price: "$145.99",
+            url: "https://a.aliexpress.com/_m0FHiqI",
+            img: "https://product.hstatic.net/200000312515/product/278472909_3155224331391984_4379330414963997720_n_93ed9d45487a443f83905f67ad8eea61_master.jpg",
+        },
+        {
+            title: "FL CMK87",
+            description: "Color scheme aluminium alloy hit",
+            price: "$155.99",
+            url: "https://a.aliexpress.com/_mtegtE6",
+            img: "https://product.hstatic.net/1000026716/product/61414_ban_phim_co_flesport_cmk87_ice_mint_coolmint_sw_kailh_box_0004_5_a5ce03d9b8634940b95f54346343d319.jpg",
+        },
+        {
+            title: "FL 980",
+            description:
+                "98 keys keyboard layout can more effectively save desktop space",
+            price: "$165.99",
+            url: "https://a.aliexpress.com/_m0CFvHC",
+            img: "https://cdn.shopify.com/s/files/1/0588/1108/9090/products/1_33c6769b-dd65-41a4-a471-a1ae88b18207_1024x1024@2x.jpg?v=1645008251",
+        },
+    ];
+
     return (
         <div className=" sticky top-0 ">
             <Head>

@@ -3,7 +3,7 @@ import KeyboardCard from "./keyboardCard";
 
 const Shop = () => {
     return (
-        <section className="bg-white h-[184vh] w-full pt-16 pb-16 text-center">
+        <section className="bg-white h-[122vh] w-full pt-16 pb-16 text-center">
             <div className="mx-auto w-[87.5%] ">
                 <h2 className="text-3xl text-[#121212] font-semibold">
                     Which Mech Keyboard is right for you?
