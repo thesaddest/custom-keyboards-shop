@@ -3,7 +3,7 @@ import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 const Navbar = () => {
-    const linkItems = ["HOME", "ABOUT", "KEYBOARD KITS", "SWITCHES"];
+    const linkItems = ["HOME", "ABOUT", "KEYBOARD KITS", "SERVICE"];
     const [isClicked, setIsClicked] = useState(false);
     const isDestop = useMediaQuery("(min-width: 768px)");
     const toggleClasses = () => {

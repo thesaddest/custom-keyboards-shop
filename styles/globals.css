@@ -79,3 +79,7 @@ nav ul li a:hover::after {
 .grid-rows-16 {
     grid-template-rows: repeat(16, auto);
 }
+
+.grid-rows-8 {
+    grid-template-rows: repeat(8, auto);
+}

@@ -12,7 +12,7 @@ const Shop = () => {
         },
         {
             title: "FL Q75",
-            description: "High-gloss mirror shell, the appearance is lit",
+            description: "High-gloss mirror, appearance is lit",
             price: "$145.99",
             url: "https://a.aliexpress.com/_m0FHiqI",
             img: "https://hanoicomputercdn.com/media/product/65246_ban_phim_co_khong_day_fl_esport_q75_blue_haze_3_mode_jellyfish_sw_kailh_box_usbc_bluetooth_rgb_0000_1.jpg",
@@ -34,12 +34,12 @@ const Shop = () => {
     ];
 
     return (
-        <section className="bg-white h-fit w-full pt-16 pb-16 text-center">
-            <div className="mx-auto w-[87.5%] ">
-                <h2 className="text-3xl text-[#121212] font-semibold">
+        <section className="bg-white h-fit w-full pt-16 pb-16 text-center lg:h-[92vh]">
+            <div className="mx-auto w-[87.5%] grid justify-items-center">
+                <h2 className="text-3xl text-[#121212] font-semibold md:text-4xl lg:text-5xl">
                     Which Mech Keyboard is right for you?
                 </h2>
-                <div className="grid grid-cols-2 grid-rows-16 gap-x-2.5 max-w-[500px] mt-11">
+                <div className="grid grid-cols-2 grid-rows-16 gap-x-2.5 max-w-[500px] mt-11 md:gap-x-20 lg:max-w-[1400px] lg:grid-cols-4 lg:grid-rows-8">
                     {data.map((keyboard, i) => {
                         return (
                             <KeyboardCard
