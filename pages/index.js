@@ -3,31 +3,20 @@ import Masthead from "../components/masthead";
 import Navbar from "../components/navbar";
 import Shop from "../components/shop";
 import Services from "../components/services";
-import axios from "axios";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchKeyboards} from "../store/keyboardsSlice";
 
 export default function Home() {
-    const [data, setData] = useState(null)
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+    const dispatch = useDispatch()
+
+
     useEffect(() => {
-        const getData = async () => {
-            try {
-                const response = await axios.get('http://localhost:5000/keyboards');
-                setData(response.data);
-                setError(null);
-            }
-            catch (e) {
-                setError(e.message);
-                setData(null);
-            }
-            finally {
-                setLoading(false)
-            }
-        }
-        getData();
-        console.log(data)
+        dispatch(fetchKeyboards())
     },[])
+
+    const keyboards = useSelector(state => state.keyboards.keyboards)
+    console.log(keyboards)
     return (
         <div className=" sticky top-0 ">
             <Head>
