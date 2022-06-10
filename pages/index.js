@@ -3,20 +3,13 @@ import Masthead from "../components/masthead";
 import Navbar from "../components/navbar";
 import Shop from "../components/shop";
 import Services from "../components/services";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchKeyboards} from "../store/keyboardsSlice";
 
 export default function Home() {
-    const dispatch = useDispatch()
 
 
-    useEffect(() => {
-        dispatch(fetchKeyboards())
-    },[])
-
-    const keyboards = useSelector(state => state.keyboards.keyboards)
-    console.log(keyboards)
     return (
         <div className=" sticky top-0 ">
             <Head>
@@ -28,6 +21,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Masthead />
+
             <Shop />
             <Services />
         </div>

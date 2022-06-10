@@ -3,9 +3,20 @@ import axios from "axios";
 
 export const fetchKeyboards = createAsyncThunk(
     'keyboards/fetchKeyboards',
-    async function () {
-        const response = await axios.get('http://localhost:5000/keyboards');
-        return response.data
+    async function (_, {rejectWithValue}) {
+        try {
+            const response = await axios.get('http://localhost:5000/keyboards');
+            console.log(response)
+
+            if(response.statusText !== 'OK') {
+                throw new Error('Sever Error!')
+            }
+
+            return response.data;
+        } catch (e) {
+            return rejectWithValue(e.message)
+        }
+
     });
 
 
@@ -26,6 +37,8 @@ const keyboardsSlice = createSlice({
             state.keyboards = action.payload;
         },
         [fetchKeyboards.rejected]: (state, action) => {
+            state.status = 'rejected';
+            state.error = action.payload;
         },
     },
 
