@@ -2,6 +2,7 @@ import Head from "next/head";
 import Masthead from "../components/masthead";
 import Navbar from "../components/navbar";
 import Shop from "../components/shop";
+import Services from "../components/services";
 
 export default function Home() {
     return (
@@ -15,8 +16,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Masthead />
-            <Navbar />
             <Shop />
+            <Services />
         </div>
     );
 }

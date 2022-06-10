@@ -10,7 +10,9 @@ const KeyboardCard = ({ title, description, url, img, price }) => {
                     </a>
                 </div>
                 <div className="flex flex-col items-center mt-2">
-                    <h3 className="text-2xl font-semibold mb-1">{title}</h3>
+                    <h3 className="text-2xl font-semibold mb-1 drop-shadow-[0_5px_3px_rgba(0,0,0,0.2)]">
+                        {title}
+                    </h3>
                     <p className="text-lg font-normal leading-5 flex min-h-[50px] max-w-[160px] justify-center mt-2">
                         {description}
                     </p>
@@ -22,6 +24,26 @@ const KeyboardCard = ({ title, description, url, img, price }) => {
                     >
                         Buy
                     </a>
+                    <p className="mt-2 text-sm">
+                        <a href={url}>
+                            <span className="ml-2">Learn more </span>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="10"
+                                    height="10"
+                                    fill="currentColor"
+                                    className="bi bi-chevron-right inline-block"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
