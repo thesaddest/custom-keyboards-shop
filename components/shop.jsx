@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import KeyboardCard from "./keyboardCard";
+import axios from "axios";
 
 const Shop = () => {
     const data = [
