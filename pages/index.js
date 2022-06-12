@@ -4,10 +4,9 @@ import Navbar from "../components/navbar";
 import Shop from "../components/shop";
 import React from "react";
 import Passions from "../components/passions";
+import Works from "../components/works";
 
 export default function Home() {
-
-
     return (
         <div className=" sticky top-0 ">
             <Head>
@@ -20,7 +19,9 @@ export default function Home() {
             </Head>
             <Masthead />
             <Shop />
+
             <Passions />
+            <Works />
         </div>
     );
 }

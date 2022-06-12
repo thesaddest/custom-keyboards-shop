@@ -8,7 +8,7 @@ body {
         sans-serif;
     line-height: 1.1;
     letter-spacing: 0;
-    @apply overflow-x-hidden sm:overflow-x-visible;
+    /* @apply overflow-x-hidden sm:overflow-x-visible; */
 }
 
 nav ul {
