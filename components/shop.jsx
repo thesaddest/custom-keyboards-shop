@@ -15,9 +15,9 @@ const Shop = () => {
     console.log(keyboards)
 
     return (
-        <section className="bg-white h-fit w-full pt-16 pb-16 text-center lg:h-screen">
+        <section className="bg-white h-fit w-full pt-16 pb-16 text-center lg:h-screen flex ">
             <div className="mx-auto w-[87.5%] grid justify-items-center">
-                <h2 className="text-3xl text-[#121212] font-semibold md:text-4xl lg:text-5xl">
+                <h2 className="text-3xl text-[#121212] font-semibold md:text-4xl lg:text-5xl pt-10">
                     Which keyboard is right for you?
                 </h2>
                 {status === 'loading' && <h2>Loading...</h2>}

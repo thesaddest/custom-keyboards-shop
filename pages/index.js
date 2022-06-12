@@ -2,10 +2,8 @@ import Head from "next/head";
 import Masthead from "../components/masthead";
 import Navbar from "../components/navbar";
 import Shop from "../components/shop";
-import Services from "../components/services";
-import React, {useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {fetchKeyboards} from "../store/keyboardsSlice";
+import React from "react";
+import Passions from "../components/passions";
 
 export default function Home() {
 
@@ -21,9 +19,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Masthead />
-
             <Shop />
-            <Services />
+            <Passions />
         </div>
     );
 }
