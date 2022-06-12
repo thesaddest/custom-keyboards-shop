@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 export const WorkContainer = ({ children }) => (
     <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">

@@ -40,9 +40,7 @@ export const TileWrapper = ({ children, numOfPages }) => {
 };
 
 export const TileBackground = ({ children }) => (
-    <div className="absolute w-full" style={{ height: "inherit" }}>
-        {children}
-    </div>
+    <div className="absolute w-full box-border" style={{height: "inherit"}}>{children}</div>
 );
 
 export const TileContent = ({ children }) => (
@@ -63,9 +61,9 @@ export const Tile = ({ page, renderContent }) => {
             ref={refContainer}
             className="absolute top-0 w-full"
             style={{
-                pointEventers:
+                pointerEvents:
                     progress <= 0 || progress >= 1 ? "none" : undefined,
-                opacity,
+                opacity
             }}
         >
             {renderContent({ progress })}
@@ -79,7 +77,7 @@ export const WorkLeft = ({ children, progress }) => {
         translateY = Math.max(-50, -(progress - 0.85) * 2 * 50);
     return (
         <div
-            className="flex flex-col items-center justify-center text-3xl h-[30vh] lg:h-auto"
+            className="flex flex-col items-center justify-center text-3xl lg:text-3xl h-[30vh] lg:h-auto"
             style={{
                 transform: `translateY(${translateY}px)`,
             }}

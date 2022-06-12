@@ -5,10 +5,11 @@ import Shop from "../components/shop";
 import React from "react";
 import Passions from "../components/passions";
 import Works from "../components/works";
+import TrustedBy from "../components/trustedby";
 
 export default function Home() {
     return (
-        <div className=" sticky top-0 ">
+        <div>
             <Head>
                 <title>CustomKbs | Shop</title>
                 <meta
@@ -18,10 +19,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Masthead />
-            <Shop />
-
+            <TrustedBy />
             <Passions />
             <Works />
+            <Shop />
         </div>
     );
 }
