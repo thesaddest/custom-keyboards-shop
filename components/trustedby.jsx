@@ -3,7 +3,7 @@ import Testimonials from "./testimonials";
 
 const TrustedBy = () => (
     <section className="bg-white min-h-screen flex flex-col justify-center items-center gap-16 md:gap-32">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center overflow-x-hidden">
             <h3 className="text-xl mb-10 font-bold text-center">
                 <span className="whitespace-nowrap text-4xl">trusted by</span> {' '}
                 <span className="whitespace-nowrap">esportsmen and content-creators</span>
