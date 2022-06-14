@@ -40,7 +40,7 @@ export const TileWrapper = ({ children, numOfPages }) => {
 };
 
 export const TileBackground = ({ children }) => (
-    <div className="absolute w-full box-border" style={{height: "inherit"}}>{children}</div>
+    <div className="absolute w-full box-border h-full" style={{height: "inherit"}}>{children}</div>
 );
 
 export const TileContent = ({ children }) => (

@@ -19,10 +19,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Masthead />
-            <TrustedBy />
             <Passions />
             <Works />
             <Shop />
+            <TrustedBy />
         </div>
     );
 }

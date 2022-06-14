@@ -30,7 +30,7 @@ const Masthead = () => {
                 playsInline
                 className="absolute w-full h-full object-cover"
             >
-                <source src="../assets/background.mp4" type="video/mp4" />
+                <source src="../assets/back-ver2.mp4" type="video/mp4" />
             </video>
             <div
                 className="p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]
