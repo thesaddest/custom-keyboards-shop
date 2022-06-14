@@ -18,24 +18,25 @@ const Carousel = ({children, className}) => {
     }, [ClassNames(), Autoplay()])
 
     const onSelect = useCallback(() => {
-        if(!emblaApi) return
+        if (!emblaApi) return
         setSelectedIndex(emblaApi.selectedScrollSnap())
     }, [emblaApi, setSelectedIndex])
 
     useEffect(() => {
-        if(!emblaApi) return
+        if (!emblaApi) return
         onSelect()
         emblaApi.on('select', onSelect)
     }, [emblaApi, onSelect])
-        return(
-            <CarouselContext.Provider value={{embla: emblaApi, selectedIndex}}>
-                <div ref={viewportRef} className={`${styles.viewport} w-full overflow-hidden ${className}`}>
-                    <div className={`${styles.container} flex`}>
-                        {children}
-                    </div>
+
+    return (
+        <CarouselContext.Provider value={{embla: emblaApi, selectedIndex}}>
+            <div ref={viewportRef} className={`${styles.viewport} w-full overflow-hidden ${className}`}>
+                <div className={`${styles.container} flex`}>
+                    {children}
                 </div>
-            </CarouselContext.Provider>
-)
+            </div>
+        </CarouselContext.Provider>
+    )
 }
 
 export default Carousel
