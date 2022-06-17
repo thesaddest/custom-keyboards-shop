@@ -1,12 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 const KeyboardCard = ({ title, description, url, img, price }) => {
+    const myLoader = ({ src }) => {
+        return `${img}`;
+    };
     return (
         <div className="pb-9 mb-0">
             <div className="pb-9 mb-0">
                 <div className="min-h-[165px] mb-2 flex flex-col items-center justify-center">
-                    <a href={url} target="_blank">
-                        <img src={img} />
+                    <a href={url} target="_blank" rel="noreferrer">
+                        <Image
+                            width={500}
+                            height={500}
+                            src={img}
+                            alt="img"
+                        />
                     </a>
                 </div>
                 <div className="flex flex-col items-center mt-2">

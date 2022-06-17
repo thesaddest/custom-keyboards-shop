@@ -15,12 +15,12 @@ const Testimonials = () => {
             <CarouselItem index={1}>
                 <Review by="Adam Carlton (CEO of NiP)">
                     Mech Custom Keyboards is a collection of world class talent from all over the world,
-                    I've been nothing but pleased with their communication, imagination, insight and delivery.
+                    I&apos;ve been nothing but pleased with their communication, imagination, insight and delivery.
                 </Review>
             </CarouselItem>
             <CarouselItem index={2}>
                 <Review by="Taeha Types (Streamer | YT Channel)">
-                    The output of Mech Custom Keyboards is unlike any other team we've worked with.
+                    The output of Mech Custom Keyboards is unlike any other team we&apos;ve worked with.
                     Their speed, professionalism and familiarity with all the technologies made me go crazy.
                 </Review>
             </CarouselItem>
@@ -33,7 +33,7 @@ const Testimonials = () => {
             <CarouselItem index={4}>
                 <Review by="Adam Carlton (CEO of NiP)">
                     Mech Custom Keyboards is a collection of world class talent from all over the world,
-                    I've been nothing but pleased with their communication, imagination, insight and delivery.
+                    I&apos;ve been nothing but pleased with their communication, imagination, insight and delivery.
                 </Review>
             </CarouselItem>
         </Carousel>

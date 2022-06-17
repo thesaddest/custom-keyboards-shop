@@ -42,7 +42,7 @@ import axios from "axios";
 // });
 
 const keyboardsSlice = createSlice({
-    name: "keyboards",
+    name: 'keyboards',
     initialState: {
         keyboards: [
             {
