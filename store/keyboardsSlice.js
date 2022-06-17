@@ -52,6 +52,7 @@ const keyboardsSlice = createSlice({
                 title: "FL680",
                 description: "Small layout, easy to carry and no worry.",
                 price: "$115.99",
+                url: 'https://a.aliexpress.com/_mOO1oRg',
                 img: "https://img.joomcdn.net/c6c178e175db9446805739fa9418593f7c533f7f_original.jpeg",
             },
             {
@@ -61,6 +62,7 @@ const keyboardsSlice = createSlice({
                 title: "FL Q75",
                 description: "High-gloss mirror, appearance is lit.",
                 price: "$145.99",
+                url: 'https://a.aliexpress.com/_m0FHiqI',
                 img: "https://hanoicomputercdn.com/media/product/65246_ban_phim_co_khong_day_fl_esport_q75_blue_haze_3_mode_jellyfish_sw_kailh_box_usbc_bluetooth_rgb_0000_1.jpg",
             },
             {
@@ -70,6 +72,7 @@ const keyboardsSlice = createSlice({
                 title: "FL CMK87",
                 description: "Color scheme aluminium alloy hit.",
                 price: "$155.99",
+                url:'https://a.aliexpress.com/_mtegtE6',
                 img: "https://product.hstatic.net/1000026716/product/61414_ban_phim_co_flesport_cmk87_ice_mint_coolmint_sw_kailh_box_0004_5_a5ce03d9b8634940b95f54346343d319.jpg",
             },
             {
@@ -79,6 +82,7 @@ const keyboardsSlice = createSlice({
                 title: "FL 980",
                 description: "98 keys to save the desktop space.",
                 price: "$165.99",
+                url: 'https://a.aliexpress.com/_m0CFvHC',
                 img: "https://cdn.shopify.com/s/files/1/0588/1108/9090/products/1_33c6769b-dd65-41a4-a471-a1ae88b18207_1024x1024@2x.jpg?v=1645008251",
             },
         ],
