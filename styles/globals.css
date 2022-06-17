@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 body {
-    background: #121212;
+    background: black;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
         sans-serif;
     line-height: 1.1;
     letter-spacing: 0;
-    /* @apply overflow-x-hidden sm:overflow-x-visible; */
 }
 
 nav ul {

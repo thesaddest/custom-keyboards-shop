@@ -6,6 +6,7 @@ import React from "react";
 import Passions from "../components/passions";
 import Works from "../components/works";
 import TrustedBy from "../components/trustedby";
+import ContactUs from "../components/contactus";
 
 export default function Home() {
     return (
@@ -23,6 +24,7 @@ export default function Home() {
             <Works />
             <Shop />
             <TrustedBy />
+            <ContactUs />
         </div>
     );
 }
