@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Masthead from "../components/masthead";
-import Navbar from "../components/navbar";
 import Shop from "../components/shop";
 import React from "react";
 import Passions from "../components/passions";
 import Works from "../components/works";
 import TrustedBy from "../components/trustedby";
 import ContactUs from "../components/contactus";
+import Footer from "../components/footer";
 
 export default function Home() {
     return (
@@ -25,6 +25,7 @@ export default function Home() {
             <Shop />
             <TrustedBy />
             <ContactUs />
+            <Footer />
         </div>
     );
 }
