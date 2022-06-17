@@ -4,7 +4,6 @@ import Shop from "../components/shop";
 import React from "react";
 import Passions from "../components/passions";
 import Works from "../components/works";
-import TrustedBy from "../components/trustedby";
 import ContactUs from "../components/contactus";
 import Footer from "../components/footer";
 
@@ -23,7 +22,6 @@ export default function Home() {
             <Passions />
             <Works />
             <Shop />
-            <TrustedBy />
             <ContactUs />
             <Footer />
         </div>
