@@ -32,6 +32,7 @@ const Works = () => (
                                 width={500}
                                 src="https://product.hstatic.net/1000026716/product/_ban_phim_co_flesport_fl680_sam_aqua_green_brown_sw_gateron_cap_0000_1_3400d8fd76ad4c1eb7e463ce39ef8e53.jpg"
                                 alt="FL 680"
+                                layout="responsive"
                             />
                         </WorkRight>
                     </WorkContainer>
@@ -53,6 +54,7 @@ const Works = () => (
                                 height={500}
                                 src="https://hanoicomputercdn.com/media/product/65247_ban_phim_co_khong_day_fl_esport_q75_blue_haze_3_mode_coolmint_sw_kailh_box_usbc_bluetooth_rgb_0001_2.jpg"
                                 alt="FL Q75"
+                                layout="responsive"
                             />
                         </WorkRight>
                     </WorkContainer>
@@ -74,6 +76,7 @@ const Works = () => (
                                 height={500}
                                 src="https://product.hstatic.net/1000026716/product/61414_ban_phim_co_flesport_cmk87_ice_mint_coolmint_sw_kailh_box_0004_5_a5ce03d9b8634940b95f54346343d319.jpg"
                                 alt="FL CMK87"
+                                layout="responsive"
                             />
                         </WorkRight>
                     </WorkContainer>
@@ -95,6 +98,7 @@ const Works = () => (
                                 height={500}
                                 src="https://cdn.shopify.com/s/files/1/0588/1108/9090/products/1_33c6769b-dd65-41a4-a471-a1ae88b18207_1024x1024@2x.jpg?v=1645008251"
                                 alt="FL 980"
+                                layout="responsive"
                             />
                         </WorkRight>
                     </WorkContainer>
