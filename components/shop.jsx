@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import KeyboardCard from "./keyboardCard";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchKeyboards } from "../store/keyboardsSlice";
+import { useSelector } from "react-redux";
 
 const Shop = () => {
     const { keyboards } = useSelector(
