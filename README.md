@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/languages/top/thesaddest/custom-keyboards-shop?style=plastic) ![](https://img.shields.io/github/languages/count/thesaddest/custom-keyboards-shop?style=plastic) ![](https://img.shields.io/github/repo-size/thesaddest/custom-keyboards-shop?style=plastic)
 
-It is a Nest.js + React stack modern web shop for selling custom keyboards!
+It is a Nest.js + Next.js(React) stack modern web shop for selling custom keyboards!
 
 ![](https://i.ibb.co/P9648P9/responsive.png)
 
