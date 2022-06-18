@@ -10,7 +10,7 @@ It is a Nest.js + Next.js(React) stack modern web shop for selling custom keyboa
 # Key Features
 - [X] Responsive design
 - [X] Pleasing parallax effects
-- [X] React + Redux Toolkit + Nest.js (as backend hosted on heroku)
+- [X] Next.js(React) + Redux Toolkit + Nest.js (as backend hosted on heroku)
 - [X] Fully working Contact Us section integrated with Formspree
 
 ![](https://i.ibb.co/vvPM02M/1.png)
